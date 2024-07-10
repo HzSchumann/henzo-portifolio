@@ -10,7 +10,7 @@
 </head>
 
 
-<body>
+<body (swipe)="onSwipe($event)">
 
     <section>
         <div class="img-div">
@@ -32,7 +32,7 @@
         </div>
     </section>
 
-    <section class="arrow-section" (swipe)="onSwipe($event)">
+    <section class="arrow-section">
         <fa-icon (click)="goToHome()" class="arrow" [icon]="faArrowLeft"></fa-icon>
         <fa-icon (click)="goToExperiences()" class="arrow" [icon]="faArrowRight"></fa-icon>
     </section>

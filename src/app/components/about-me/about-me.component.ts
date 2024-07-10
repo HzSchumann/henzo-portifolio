@@ -25,11 +25,11 @@ export class AboutMeComponent {
   }
 
   onSwipe(event: any): void {
-    if (event.direction === 4) {
+    if (event.direction === 2) {
       this.goToExperiences();
     }
 
-    if (event.direction === 2) {
+    if (event.direction === 4) {
       this.goToHome();
     }
   }

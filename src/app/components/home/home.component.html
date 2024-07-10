@@ -10,7 +10,7 @@
 </head>
 
 
-<body>
+<body (swipe)="onSwipe($event)">
 
     <section>
         <div class="img-div">
@@ -18,7 +18,7 @@
                 alt="cover img">
         </div>
 
-        <div class="cover-txt" (swipe)="onSwipe($event)">
+        <div class="cover-txt">
             <h2>PORTIFOLIO</h2>
             <h2 class="my-name">HENZO SCHUMANN</h2>
             <fa-icon (click)="goToAboutMe()" class="arrow" [icon]="faArrowRight"></fa-icon>
