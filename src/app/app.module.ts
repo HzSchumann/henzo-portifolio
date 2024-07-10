@@ -12,7 +12,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 
 export class MyHammerConfig extends HammerGestureConfig {
   override overrides = <any>{
-    'swipe': { direction: 31 } // Configura o HammerJS para reconhecer todos os tipos de swipe
+    'swipe': { direction: 6 } // Configura o HammerJS para reconhecer apenas swipe horizontal (esquerda e direita)
   };
 }
 
