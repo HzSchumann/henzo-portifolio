@@ -24,6 +24,16 @@ export class GratefulComponent {
     }
   }
 
+  onSwipe(event: any): void {
+    if (event.direction === 2) {
+      this.goToHome();
+    }
+
+    if (event.direction === 4) {
+      this.goToCertifications();
+    }
+  }
+
   goToHome(): void {
     this.router.navigate(['/home']);
   }

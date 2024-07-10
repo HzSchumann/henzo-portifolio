@@ -61,6 +61,16 @@ export class CertificationsComponent {
     }
   }
 
+  onSwipe(event: any): void {
+    if (event.direction === 2) {
+      this.goToThanks();
+    }
+
+    if (event.direction === 4) {
+      this.goToExperiences();
+    }
+  }
+
   goToExperiences(): void {
     this.router.navigate(['/experiences']);
   }

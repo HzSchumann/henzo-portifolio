@@ -24,6 +24,16 @@ export class ExperiencesComponent {
     }
   }
 
+  onSwipe(event: any): void {
+    if (event.direction === 2) {
+      this.goToCertifications();
+    }
+
+    if (event.direction === 4) {
+      this.goToAboutMe();
+    }
+  }
+
   goToAboutMe(): void {
     this.router.navigate(['/about-me']);
   }

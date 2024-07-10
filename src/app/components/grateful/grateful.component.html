@@ -11,46 +11,49 @@
 
 
 <body>
-    <section>
-        <div class="text">
-            <h1>THANK YOU</h1>
+    <nav (swipe)="onSwipe($event)">
 
-            <div class="separate-section">
-                <div class="contact-1">
-                    <div>
-                        <h5>E-MAIL</h5>
-                        <p>henzoschumann@hotmail.com</p>
+        <section>
+            <div class="text">
+                <h1>THANK YOU</h1>
+
+                <div class="separate-section">
+                    <div class="contact-1">
+                        <div>
+                            <h5>E-MAIL</h5>
+                            <p>henzoschumann@hotmail.com</p>
+                        </div>
+                        <div>
+                            <h5>CELPHONE</h5>
+                            <p>(11)97378-3553</p>
+                        </div>
                     </div>
-                    <div>
-                        <h5>CELPHONE</h5>
-                        <p>(11)97378-3553</p>
+                    <div class="contact-2">
+                        <div>
+                            <h5>INSTAGRAM</h5>
+                            <p>@henzoschumann</p>
+                        </div>
+                        <div>
+                            <h5>LINKEDIN</h5>
+                            <p>Henzo Schumann</p>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-2">
-                    <div>
-                        <h5>INSTAGRAM</h5>
-                        <p>@henzoschumann</p>
-                    </div>
-                    <div>
-                        <h5>LINKEDIN</h5>
-                        <p>Henzo Schumann</p>
-                    </div>
-                </div>
+
             </div>
 
-        </div>
-
-        <div class="img-div">
-            <img src="../../../assets/images/photo/myphoto3.jpg" alt="my-photo">
-        </div>
+            <div class="img-div">
+                <img src="../../../assets/images/photo/myphoto3.jpg" alt="my-photo">
+            </div>
 
 
-    </section>
+        </section>
 
-    <section class="arrow-section">
-        <fa-icon (click)="goToCertifications()" class="arrow" [icon]="faArrowLeft"></fa-icon>
-        <fa-icon (click)="goToHome()" class="arrow" [icon]="faHome"></fa-icon>
-    </section>
+        <section class="arrow-section">
+            <fa-icon (click)="goToCertifications()" class="arrow" [icon]="faArrowLeft"></fa-icon>
+            <fa-icon (click)="goToHome()" class="arrow" [icon]="faHome"></fa-icon>
+        </section>
+    </nav>
 
 
 

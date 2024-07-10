@@ -11,29 +11,32 @@
 
 
 <body>
-    <section>
-        <h1>ACADEMIC</h1>
+    <nav (swipe)="onSwipe($event)">
 
-        <img class="img-fiap" src="../../../assets/images/logos/fiap.png" alt="logo fiap">
-        <h5>INFORMATION SYSTEMS</h5>
-        <h5>AI FOR DEVS</h5>
-    </section>
+        <section>
+            <h1>ACADEMIC</h1>
 
-    <section class="section-professional">
-        <h1>PROFESSIONAL</h1>
+            <img class="img-fiap" src="../../../assets/images/logos/fiap.png" alt="logo fiap">
+            <h5>INFORMATION SYSTEMS</h5>
+            <h5>AI FOR DEVS</h5>
+        </section>
 
-        <img class="img-tb" src="../../../assets/images/logos/tecban.png" alt="logo tecban">
-        <h5>IT ANALYST</h5>
+        <section class="section-professional">
+            <h1>PROFESSIONAL</h1>
 
-        <img class="img-ibm" src="../../../assets/images/logos/ibm.png" alt="logo ibm">
-        <h5>FRONT-END DEVELOPER</h5>
+            <img class="img-tb" src="../../../assets/images/logos/tecban.png" alt="logo tecban">
+            <h5>IT ANALYST</h5>
 
-    </section>
+            <img class="img-ibm" src="../../../assets/images/logos/ibm.png" alt="logo ibm">
+            <h5>FRONT-END DEVELOPER</h5>
 
-    <section class="arrow-section">
-        <fa-icon (click)="goToAboutMe()" class="arrow" [icon]="faArrowLeft"></fa-icon>
-        <fa-icon (click)="goToCertifications()" class="arrow" [icon]="faArrowRight"></fa-icon>
-    </section>
+        </section>
+
+        <section class="arrow-section">
+            <fa-icon (click)="goToAboutMe()" class="arrow" [icon]="faArrowLeft"></fa-icon>
+            <fa-icon (click)="goToCertifications()" class="arrow" [icon]="faArrowRight"></fa-icon>
+        </section>
+    </nav>
 
 
 </body>
