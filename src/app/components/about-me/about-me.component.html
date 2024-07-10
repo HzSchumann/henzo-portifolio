@@ -32,7 +32,7 @@
         </div>
     </section>
 
-    <section class="arrow-section">
+    <section class="arrow-section" (swipe)="onSwipe($event)">
         <fa-icon (click)="goToHome()" class="arrow" [icon]="faArrowLeft"></fa-icon>
         <fa-icon (click)="goToExperiences()" class="arrow" [icon]="faArrowRight"></fa-icon>
     </section>

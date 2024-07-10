@@ -24,6 +24,16 @@ export class AboutMeComponent {
     }
   }
 
+  onSwipe(event: any): void {
+    if (event.direction === 4) {
+      this.goToExperiences();
+    }
+
+    if (event.direction === 2) {
+      this.goToHome();
+    }
+  }
+
   goToHome(): void {
     this.router.navigate(['/home']);
   }
