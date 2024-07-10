@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { faArrowLeft, faHome } from '@fortawesome/free-solid-svg-icons';
 
@@ -12,6 +12,17 @@ export class GratefulComponent {
   faArrowLeft = faArrowLeft;
 
   constructor(private router: Router) { }
+
+  @HostListener('window:keydown', ['$event'])
+  handleKeyDown(event: KeyboardEvent): void {
+    if (event.key === 'ArrowRight') {
+      this.goToHome();
+    }
+
+    if (event.key === 'ArrowLeft') {
+      this.goToCertifications();
+    }
+  }
 
   goToHome(): void {
     this.router.navigate(['/home']);

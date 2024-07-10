@@ -29,8 +29,8 @@ body {
 }
 
 section {
-    margin-top: 5rem;
-    margin-left: 4rem;
+    // margin-top: 5rem;
+    // margin-left: 4rem;
     color: #fff;
     display: flex;
 }
@@ -75,7 +75,12 @@ section {
 
 img {
     height: 600px;
-    border-radius: 20px;
+    border-radius: 6px;
+}
+
+.img-div {
+    margin-right: 0;
+    margin-left: 12rem;
 }
 
 .arrow-section {
@@ -84,9 +89,9 @@ img {
     font-family: 'Gotham-Medium';
     font-weight: 600;
     font-size: 24px;
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-bottom: 3rem;
-    margin-right: 8rem;
+    margin-right: 3rem;
 
     .arrow {
         color: #FFF;
@@ -132,6 +137,11 @@ img {
 
     }
 
+    .img-div {
+        margin-right: 0;
+        margin-left: 2rem;
+    }
+
     .contact-1,
     .contact-2 {
         flex-direction: column;
@@ -143,7 +153,6 @@ img {
     }
 
     .arrow-section {
-
         flex-direction: row;
         margin-top: 2rem;
         margin-bottom: 3rem;
