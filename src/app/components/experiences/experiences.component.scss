@@ -29,50 +29,34 @@ body {
     height: 100vh;
 }
 
-h1 {
+h1,
+h5 {
     color: azure;
     font-family: 'Gotham-Medium', sans-serif;
 }
 
-h2 {
-    color: #BFA27D;
-    font-weight: 300;
+h5 {
+    margin-bottom: 1rem;
+}
+
+.section-professional {
     margin-top: 3rem;
+}
+
+.img-fiap {
+    height: 40px;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-section {
-    width: 100%;
-    display: flex;
-    margin-bottom: 3rem;
+.img-tb {
+    height: 100px;
 }
 
-.certification-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.certification-box {
-    height: fit-content;
-    width: fit-content;
-    // margin-top: 2rem;
-    // margin-right: 1rem;
-    padding: 2rem;
-    border: 1px solid #373737;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.1;
-
-    &:hover {
-        background-color: #373737;
-    }
-
-    img {
-        width: 150px;
-    }
-
-
+.img-ibm {
+    height: 50px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .arrow-section {
@@ -81,7 +65,7 @@ section {
     font-family: 'Gotham-Medium';
     font-weight: 600;
     font-size: 24px;
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 3rem;
 
     .arrow {
@@ -95,7 +79,6 @@ section {
     }
 }
 
-
 @media(max-width: 1000px) {
     body {
         padding-left: 1.5rem;
@@ -103,14 +86,4 @@ section {
     }
 
 
-    .certification-box {
-
-
-
-        img {
-            width: 100px;
-        }
-
-
-    }
 }

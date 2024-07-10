@@ -13,7 +13,7 @@ export class HomeComponent {
 
   constructor(private router: Router) { }
 
-  goToCertifications(): void {
-    this.router.navigate(['/certifications']);
+  goToAboutMe(): void {
+    this.router.navigate(['/about-me']);
   }
 }

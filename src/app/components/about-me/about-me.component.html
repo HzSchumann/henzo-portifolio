@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Angular App</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="about-me.component.scss">
+</head>
+
+
+<body>
+
+    <section>
+        <div class="img-div">
+            <img src="../../../assets/images/photo/myphoto.jpg" alt="my photo">
+        </div>
+
+        <div class="cover-txt">
+            <h2>ABOUT ME</h2>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quia doloribus vero ipsum, ea nemo hic
+                optio dolore nulla alias placeat accusantium, quaerat veritatis odio dolor porro perspiciatis eligendi
+                veniam dicta amet nobis facilis aperiam suscipit. Molestiae, nobis tempore necessitatibus porro nihil
+                distinctio, rem ex repellendus, soluta minima impedit alias?</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quia doloribus vero ipsum, ea nemo hic
+                optio dolore nulla alias placeat accusantium, quaerat veritatis odio dolor porro perspiciatis eligendi
+                veniam dicta amet nobis facilis aperiam suscipit. Molestiae, nobis tempore necessitatibus porro nihil
+                distinctio, rem ex repellendus, soluta minima impedit alias?</p>
+        </div>
+    </section>
+
+    <section class="arrow-section">
+        <fa-icon (click)="goToHome()" class="arrow" [icon]="faArrowLeft"></fa-icon>
+        <fa-icon (click)="goToExperiences()" class="arrow" [icon]="faArrowRight"></fa-icon>
+    </section>
+
+</body>
+
+</html>

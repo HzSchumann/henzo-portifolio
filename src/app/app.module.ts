@@ -7,6 +7,8 @@ import { CertificationsComponent } from './components/certifications/certificati
 import { HomeComponent } from './components/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { GratefulComponent } from './components/grateful/grateful.component';
+import { ExperiencesComponent } from './components/experiences/experiences.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
 
 
 @NgModule({
@@ -15,6 +17,8 @@ import { GratefulComponent } from './components/grateful/grateful.component';
     CertificationsComponent,
     HomeComponent,
     GratefulComponent,
+    ExperiencesComponent,
+    AboutMeComponent,
   ],
   imports: [
     BrowserModule,

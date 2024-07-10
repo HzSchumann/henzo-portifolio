@@ -50,8 +50,8 @@ export class CertificationsComponent {
 
   constructor(private router: Router) { }
 
-  goToHome(): void {
-    this.router.navigate(['/home']);
+  goToExperiences(): void {
+    this.router.navigate(['/experiences']);
   }
 
   goToThanks(): void {
