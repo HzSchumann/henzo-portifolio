@@ -23,8 +23,8 @@ html {
 
 body {
     background-color: #131313;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
     padding-top: 5rem;
     height: 100vh;
 }
@@ -73,6 +73,26 @@ section {
     }
 
 
+}
+
+.arrow-section {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gotham-Medium';
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+
+    .arrow {
+        color: #FFF;
+        cursor: pointer;
+
+        &:hover {
+            color: #373737;
+            transition: 0.1;
+        }
+    }
 }
 
 

@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CertificationsComponent } from './components/certifications/certifications.component';
 import { HomeComponent } from './components/home/home.component';
+import { GratefulComponent } from './components/grateful/grateful.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'certifications', component: CertificationsComponent },
+  { path: 'thanks', component: GratefulComponent },
 ];
 
 @NgModule({

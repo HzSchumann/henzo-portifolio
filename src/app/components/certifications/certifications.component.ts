@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-certifications',
@@ -6,6 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./certifications.component.scss']
 })
 export class CertificationsComponent {
+  faArrowRight = faArrowRight;
+  faArrowLeft = faArrowLeft;
+
   aiCertifications = [
     {
       src: 'https://images.credly.com/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png',
@@ -42,4 +47,14 @@ export class CertificationsComponent {
       alt: 'logo Scrum Foundation Professional Certificate'
     }
   ]
+
+  constructor(private router: Router) { }
+
+  goToHome(): void {
+    this.router.navigate(['/home']);
+  }
+
+  goToThanks(): void {
+    this.router.navigate(['/thanks']);
+  }
 }

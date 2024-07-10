@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Angular App</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="grateful.component.scss">
+</head>
+
+
+<body>
+    <section>
+        <div class="text">
+            <h1>THANK YOU</h1>
+
+            <div class="separate-section">
+                <div class="contact-1">
+                    <div>
+                        <h5>E-MAIL</h5>
+                        <p>henzoschumann@hotmail.com</p>
+                    </div>
+                    <div>
+                        <h5>CELPHONE</h5>
+                        <p>(11)97378-3553</p>
+                    </div>
+                </div>
+                <div class="contact-2">
+                    <div>
+                        <h5>INSTAGRAM</h5>
+                        <p>@henzoschumann</p>
+                    </div>
+                    <div>
+                        <h5>LINKEDIN</h5>
+                        <p>Henzo Schumann</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <img src="../../../assets/images/certifications/me.jpg" alt="my-photo">
+        </div>
+
+
+    </section>
+
+    <section class="arrow-section">
+        <fa-icon (click)="goToCertifications()" class="arrow" [icon]="faArrowLeft"></fa-icon>
+        <fa-icon (click)="goToHome()" class="arrow" [icon]="faHome"></fa-icon>
+    </section>
+
+
+
+</body>
+
+</html>
