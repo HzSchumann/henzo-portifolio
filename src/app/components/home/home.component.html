@@ -18,7 +18,7 @@
                 alt="cover img">
         </div>
 
-        <div class="cover-txt">
+        <div class="cover-txt" (swipe)="onSwipe($event)">
             <h2>PORTIFOLIO</h2>
             <h2 class="my-name">HENZO SCHUMANN</h2>
             <fa-icon (click)="goToAboutMe()" class="arrow" [icon]="faArrowRight"></fa-icon>

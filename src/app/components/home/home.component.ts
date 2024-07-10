@@ -20,6 +20,12 @@ export class HomeComponent {
     }
   }
 
+  onSwipe(event: any): void {
+    if (event.direction === 4) {
+      this.goToAboutMe();
+    }
+  }
+
   goToAboutMe(): void {
     this.router.navigate(['/about-me']);
   }
