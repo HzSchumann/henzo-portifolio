@@ -9,6 +9,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { GratefulComponent } from './components/grateful/grateful.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { ArticlesComponent } from './components/articles/articles.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 export class MyHammerConfig extends HammerGestureConfig {
   override overrides = <any>{
@@ -24,6 +26,8 @@ export class MyHammerConfig extends HammerGestureConfig {
     GratefulComponent,
     ExperiencesComponent,
     AboutMeComponent,
+    ArticlesComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,

@@ -21,7 +21,6 @@ html {
     overflow-x: hidden;
 }
 
-
 body {
     background-color: #131313;
     padding-left: 6rem;
@@ -34,47 +33,6 @@ h1 {
     color: azure;
     font-family: 'Gotham-Medium', sans-serif;
     font-size: 38px;
-}
-
-h2 {
-    color: #BFA27D;
-    font-weight: 300;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
-
-section {
-    width: 100%;
-    display: flex;
-    margin-bottom: 3rem;
-}
-
-.certification-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.certification-box {
-    height: fit-content;
-    width: fit-content;
-    // margin-top: 2rem;
-    // margin-right: 1rem;
-    padding: 2rem;
-    border: 1px solid #373737;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: 0.1;
-
-    &:hover {
-        background-color: #373737;
-    }
-
-    img {
-        width: 150px;
-    }
-
-
 }
 
 .arrow-section {
@@ -102,17 +60,5 @@ section {
     body {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-    }
-
-
-    .certification-box {
-
-
-
-        img {
-            width: 100px;
-        }
-
-
     }
 }

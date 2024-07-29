@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="projects.component.scss">
+</head>
+
+<body>
+    <nav (swipe)="onSwipe($event)">
+
+
+        <h1>Projects</h1>
+
+
+
+        <section class="arrow-section">
+            <fa-icon (click)="goToCertifications()" class="arrow" [icon]="faArrowLeft"></fa-icon>
+            <fa-icon (click)="goToExperiences()" class="arrow" [icon]="faArrowRight"></fa-icon>
+        </section>
+    </nav>
+</body>

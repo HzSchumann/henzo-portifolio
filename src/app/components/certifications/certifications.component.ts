@@ -53,29 +53,29 @@ export class CertificationsComponent {
   @HostListener('window:keydown', ['$event'])
   handleKeyDown(event: KeyboardEvent): void {
     if (event.key === 'ArrowRight') {
-      this.goToThanks();
+      this.goToArticles();
     }
 
     if (event.key === 'ArrowLeft') {
-      this.goToExperiences();
+      this.goToProjects();
     }
   }
 
   onSwipe(event: any): void {
     if (event.direction === 2) {
-      this.goToThanks();
+      this.goToArticles();
     }
 
     if (event.direction === 4) {
-      this.goToExperiences();
+      this.goToProjects();
     }
   }
 
-  goToExperiences(): void {
-    this.router.navigate(['/experiences']);
+  goToProjects(): void {
+    this.router.navigate(['/projects']);
   }
 
-  goToThanks(): void {
-    this.router.navigate(['/thanks']);
+  goToArticles(): void {
+    this.router.navigate(['/articles']);
   }
 }

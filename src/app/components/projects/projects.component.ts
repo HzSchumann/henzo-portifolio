@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-experiences',
-  templateUrl: './experiences.component.html',
-  styleUrls: ['./experiences.component.scss']
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.scss']
 })
-export class ExperiencesComponent {
+export class ProjectsComponent {
   faArrowRight = faArrowRight;
   faArrowLeft = faArrowLeft;
 
@@ -16,29 +16,30 @@ export class ExperiencesComponent {
   @HostListener('window:keydown', ['$event'])
   handleKeyDown(event: KeyboardEvent): void {
     if (event.key === 'ArrowRight') {
-      this.goToProjects();
+      this.goToCertifications();
     }
 
     if (event.key === 'ArrowLeft') {
-      this.goToAboutMe();
+      this.goToExperiences();
     }
   }
 
   onSwipe(event: any): void {
     if (event.direction === 2) {
-      this.goToProjects();
+      this.goToCertifications();
     }
 
     if (event.direction === 4) {
-      this.goToAboutMe();
+      this.goToExperiences();
     }
   }
 
-  goToAboutMe(): void {
-    this.router.navigate(['/about-me']);
+  goToExperiences(): void {
+    this.router.navigate(['/experiences']);
   }
 
-  goToProjects(): void {
-    this.router.navigate(['/projects']);
+  goToCertifications(): void {
+    this.router.navigate(['/certifications']);
   }
+
 }

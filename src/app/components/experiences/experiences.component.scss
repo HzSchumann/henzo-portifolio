@@ -30,13 +30,18 @@ body {
     height: 100vh;
 }
 
+h1 {
+    color: #e2e2e2;
+    font-size: 34px;
+}
+
 h1,
 h5 {
-    color: azure;
     font-family: 'Gotham-Medium', sans-serif;
 }
 
 h5 {
+    color: rgb(196, 196, 196);
     margin-bottom: 1rem;
 }
 
@@ -45,18 +50,16 @@ h5 {
 }
 
 .img-fiap {
-    height: 40px;
-    margin-top: 2rem;
+    height: 60px;
     margin-bottom: 2rem;
 }
 
 .img-tb {
-    height: 100px;
+    height: 140px;
 }
 
 .img-ibm {
-    height: 50px;
-    margin-top: 2rem;
+    height: 80px;
     margin-bottom: 2rem;
 }
 
@@ -80,10 +83,52 @@ h5 {
     }
 }
 
+.academic-div {
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    align-items: flex-start;
+
+    img {
+        margin-right: 3rem;
+    }
+
+    h5 {
+        font-size: 30px;
+    }
+}
+
 @media(max-width: 1000px) {
     body {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+    }
+
+
+
+    .academic-div {
+        flex-direction: column;
+
+        .img-fiap {
+            height: 40px;
+        }
+
+        h5 {
+            font-size: 24px;
+        }
+    }
+
+    .section-professional {
+        margin-top: 4rem;
+
+        .img-tb {
+            height: 100px;
+        }
+
+        .img-ibm {
+            height: 50px;
+            margin-bottom: 2rem;
+        }
     }
 
 

@@ -20,7 +20,7 @@ export class GratefulComponent {
     }
 
     if (event.key === 'ArrowLeft') {
-      this.goToCertifications();
+      this.goToArticles();
     }
   }
 
@@ -30,7 +30,7 @@ export class GratefulComponent {
     }
 
     if (event.direction === 4) {
-      this.goToCertifications();
+      this.goToArticles();
     }
   }
 
@@ -38,8 +38,8 @@ export class GratefulComponent {
     this.router.navigate(['/home']);
   }
 
-  goToCertifications(): void {
-    this.router.navigate(['/certifications']);
+  goToArticles(): void {
+    this.router.navigate(['/articles']);
   }
 
 }

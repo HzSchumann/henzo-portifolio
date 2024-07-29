@@ -35,7 +35,9 @@ body {
     height: 100vh;
 }
 
-
+.about-me-txt {
+    width: 70%;
+}
 
 .img-div {
     height: 500px;
@@ -53,6 +55,7 @@ body {
 
 .cover-txt {
     margin-top: 3rem;
+    padding-left: 3rem;
     color: white;
     font-family: 'Gotham-Medium';
     font-weight: 600;
@@ -60,11 +63,16 @@ body {
 
     p {
         margin-top: 1rem;
+        margin-bottom: 2rem;
         font-family: 'Gotham-Light';
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 100;
     }
 
+
+    span {
+        color: #BFA27D
+    }
 }
 
 .arrow-section {
@@ -99,11 +107,17 @@ body {
 
     .cover-txt {
         margin-top: 3rem;
+        padding-left: 0rem;
 
         h2 {
             margin-bottom: 3rem;
 
         }
+    }
+
+    .about-me-txt {
+        width: 100%;
+
     }
 
 
