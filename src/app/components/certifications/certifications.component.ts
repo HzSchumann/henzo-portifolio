@@ -13,6 +13,10 @@ export class CertificationsComponent {
 
   aiCertifications = [
     {
+      src: 'https://images.credly.com/images/05de6fa7-8633-437c-80b5-7ee73779a87f/image.png',
+      alt: 'logo Generative AI Overview for Project Managers'
+    },
+    {
       src: 'https://images.credly.com/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png',
       alt: 'logo ai fundamentals'
     },
@@ -32,6 +36,18 @@ export class CertificationsComponent {
       src: '../assets/images/certifications/btcgai.png',
       alt: 'logo generative ai business transformation and career growth'
     },
+    {
+      src: '../assets/images/certifications/genaifm.png',
+      alt: 'logo Generative AI: Foundation Models and Platforms'
+    },
+    {
+      src: '../assets/images/certifications/genaies.png',
+      alt: 'logo Generative AI Essentials'
+    },
+    {
+      src: '../assets/images/certifications/genaiet.png',
+      alt: 'logo Generative AI: Impact, Considerations, and Ethical Issues'
+    }
   ]
 
   cloudCertifications = [
@@ -45,6 +61,10 @@ export class CertificationsComponent {
     {
       src: 'https://static.wixstatic.com/media/74bb6f_850f3a578fdc4bbf89bfd3d392a84af7~mv2.png/v1/fit/w_500,h_500,q_90/file.png',
       alt: 'logo Scrum Foundation Professional Certificate'
+    },
+    {
+      src: 'https://images.credly.com/images/bc08972c-3c7d-4b99-82a0-c94bcca36674/Badges_v8-07_Practitioner.png',
+      alt: 'logo Enterprise Design Thinking Practitioner'
     }
   ]
 
